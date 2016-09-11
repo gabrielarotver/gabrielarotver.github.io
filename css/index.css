@@ -1,0 +1,276 @@
+/*******Font***************************/
+* {
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+}
+
+
+/*********NAV BAR************************/
+nav {
+  background-color: #3DC9B3;
+  font-weight: bold;
+}
+
+nav a.brand-logo {
+  padding-left: 1rem;
+  font-weight: normal;
+}
+
+/*************NAME SECTION & LANDING****************/
+
+section#name {
+  background-image: url("../images/latop2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 90vh;
+  background-size: cover;
+
+}
+
+section#name div#landing {
+  color: #333;
+  text-align: center;
+}
+
+section#name div h1 {
+  margin: 0 0 .5rem 0;
+  padding-top: 8rem;
+  font-size: 4.2rem;
+  text-shadow: 1px 3px 20px #FFF;
+}
+
+section#name div h3 {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  /***make text legible on black part of bg***/
+  text-shadow: 2px 2px 2px #FFF;
+}
+
+section#name div a {
+  margin-top: 2rem;
+  background-color: #3DC9B3;
+}
+
+section.centeredSection {
+  padding: 3rem 0 4rem 0;
+  text-align: center;
+}
+section#welcome {
+  background: #f3f5f8;
+}
+
+h3.title {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+section#welcome p {
+  width: 55%;
+  margin: 1rem auto;
+  color: #757575;
+  line-height: 25px;
+  font-size: 0.95rem;
+}
+
+
+/************PORTFOLIO***********************/
+section#portfolio {
+  background: url("../images/keyboard2.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+section#portfolio a {
+  color: rgba(61, 201, 179, 0.7);
+  transition: all 0.6s;
+}
+
+section#portfolio a:hover, section#contactMe a:hover {
+  color: rgba(61, 201, 179, 1);
+  transition: all 0.6s;
+}
+
+/**************PROJECTS IN FLEXSLIDER*****************/
+
+div.flexslider {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 90%;
+}
+
+a.projectLink {
+  display: inline-block;
+}
+
+
+div.card:hover {
+  background-color: rgba(61, 201, 179, 1);
+  transition: all 0.6s;
+}
+
+div.card:hover img {
+  opacity: 0.3;
+  filter: alpha(opacity=70);
+}
+
+
+div.card-image {
+  position: relative;
+}
+
+div.card:hover .centerText {
+  display: block;
+}
+.centerText {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+
+
+div.flexslider div.container div.row div {
+  text-align: center;
+}
+
+p.description {
+  color: #757575;
+  line-height: 25px;
+  font-size: 0.95rem;
+  word-spacing: 1px;
+}
+
+img.work {
+  width: 100%;
+  height: 15rem;
+  border: 6px solid rgba(61, 201, 179, .5);
+  border-radius: 5px;
+}
+
+/***************SKILLS********************/
+h3.title small {
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+
+ section#skills div.flexslider {
+  padding: 1rem 0;
+  background-color: #f3f5f8;
+  border: none;
+}
+
+h3#mySkillTitle {
+  padding: 1rem;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #f3f5f8;
+  margin-bottom: 0;
+}
+
+div h3.skill {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+div h3.skill::before, h3#name::after, div.detail h3::after{
+  content: " ";
+  border: solid 2px #3DC9B3;
+  display: block;
+  width: 35px;
+  margin: 15px auto;
+}
+
+div.fa-stack i.fa-circle {
+  color: #3DC9B3;
+}
+
+section#skills ol.flex-control-nav{
+  background-color: #f3f5f8;
+  bottom: -20px;
+}
+
+/****************CONTACT ME*************/
+img#me {
+  display: block;
+  width: 13em;
+  height: 18em;
+  border-radius: 2em;
+  margin: 2rem auto;
+}
+
+section#contactMe a, section#moreDetails a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+/**********MORE DETAILS ABOUT ME*********/
+
+div.detail h3 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #3DC9B3;
+}
+
+section#moreDetails {
+  background-color: #f3f5f8;
+}
+
+section#moreDetails div.detail {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+section#moreDetails div.detail span {
+  margin-top: 1rem;
+  color: #333;
+}
+
+section#moreDetails div.detail:hover {
+  border-bottom: 3px solid #3DC9B3;
+  transition: all 0.4s ease-in-out;
+  transform: translate(0, -15px);
+}
+
+
+
+
+
+/***************FOOTER**************/
+footer {
+  padding: 1rem 2rem;
+  text-align: right;
+  background-color: #333;
+  color: white;
+
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+/**********MEDIA QUERIES******************/
+@media screen and (max-width: 992px) {
+  /*******FLEXSLIDER PROJECTS*************/
+  img.work {
+    height: 30rem;
+  }
+}
